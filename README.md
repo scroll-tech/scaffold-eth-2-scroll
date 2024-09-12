@@ -87,7 +87,7 @@ cd packages/hardhat && cp .env.example .env
   
 ```
 # for scroll sepolia
-yarn deploy --network scrollSeplia
+yarn deploy --network scrollSepolia
 # for L1SLOAD
 yarn deploy --network l1SLOAD
 ```
