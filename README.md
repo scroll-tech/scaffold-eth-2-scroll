@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://scroll.io"><img alt="Scroll" src="https://scroll.io/static/media/Scroll_Banner1.bbb483b6c623f1f3e436be015eba0514.svg" width=320></a>
+  <a href="https://scroll.io"><img alt="Scroll" src="https://scroll.io/static/media/Scroll_Banner1.bbb483b6c623f1f3e436be015eba0514.svg"></a>
   <br />
   <br />
 </div>
@@ -88,7 +88,9 @@ cd packages/hardhat && cp .env.example .env
 ```
 yarn deploy --network scrollSeplia
 ```
+
     or
+
 ```
 yarn deploy --network l1SLOAD
 ```
