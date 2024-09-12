@@ -1,10 +1,10 @@
 <div align="center">
-  <a href="https://scroll.io"><img alt="Scroll" src="https://scroll.io/static/media/Scroll_FullLogo.07032ebd8a84b79128eb669f2822bc5e.svg" width=320></a>
+  <a href="https://scroll.io"><img alt="Scroll" src="https://scroll.io/static/media/Scroll_Banner1.bbb483b6c623f1f3e436be015eba0514.svg" width=320></a>
   <br />
   <br />
 </div>
 
-# 🏗 Scaffold-Scroll
+# 🏗 Scaffold-Scroll 📜
 
 <h4 align="center">
   <a href="https://docs.scaffoldeth.io">Documentation</a> |
@@ -73,25 +73,25 @@ Visit your app on: `http://localhost:3000`. You can interact with your smart con
 
 To deploy contracts to a remote testnet (e.g. Scroll Sepolia), follow the steps below:
 
-1. Get Scroll Sepolia ETH from the [Scroll Sepolia Faucet](https://docs.scroll.io/en/user-guide/faucet/) or [Scroll Sepolia thirdweb Faucet](https://thirdweb.com/scroll-sepolia-testnet).
-   Get L1SLOAD testnet token, follow this guide [L1SLOAD GUIDE](https://scrollzkp.notion.site/L1SLOAD-Guide-2be3c335005b4bd28da38c62cf3e6a9b).
+1. Get Scroll Sepolia ETH from the [Scroll Sepolia Faucet](https://docs.scroll.io/en/user-guide/faucet/) or [Scroll Sepolia thirdweb Faucet](https://thirdweb.com/scroll-sepolia-testnet). Get L1SLOAD testnet token, follow this guide [L1SLOAD GUIDE](https://scrollzkp.notion.site/L1SLOAD-Guide-2be3c335005b4bd28da38c62cf3e6a9b).
 
 2. Inside the `packages/hardhat` directory, copy `.env.example` to `.env`.
 
-   ```bash
-   cd packages/hardhat && cp .env.example .env
-   ```
+```bash
+cd packages/hardhat && cp .env.example .env
+```
 
 3. Edit your `.env` to specify the environment variables. Only specifying the `DEPLOYER_PRIVATE_KEY` is necessary here. The contract will be deployed from the address associated with this private key, so make sure it has enough Sepolia ETH.
 
 4. Use command
-  ```
-  yarn deploy --network scrollSeplia
-  ```
-  or
-  ```
-  yarn deploy --network l1SLOAD
-  ```
+  
+```
+yarn deploy --network scrollSeplia
+```
+    or
+```
+yarn deploy --network l1SLOAD
+```
 
 **What's next**:
 
