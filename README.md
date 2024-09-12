@@ -83,15 +83,12 @@ cd packages/hardhat && cp .env.example .env
 
 3. Edit your `.env` to specify the environment variables. Only specifying the `DEPLOYER_PRIVATE_KEY` is necessary here. The contract will be deployed from the address associated with this private key, so make sure it has enough Sepolia ETH.
 
-4. Use command
+4. Use command to deploy all of your contracts:
   
 ```
+# for scroll sepolia
 yarn deploy --network scrollSeplia
-```
-
-    or
-
-```
+# for L1SLOAD
 yarn deploy --network l1SLOAD
 ```
 
