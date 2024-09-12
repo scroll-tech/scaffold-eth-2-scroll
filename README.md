@@ -1,9 +1,17 @@
-# 🏗 Scaffold-ETH 2
+<div align="center">
+  <a href="https://scroll.io"><img alt="Scroll" src="https://scroll.io/static/media/Scroll_FullLogo.07032ebd8a84b79128eb669f2822bc5e.svg" width=320></a>
+  <br />
+  <br />
+</div>
+
+# 🏗 Scaffold-Scroll
 
 <h4 align="center">
   <a href="https://docs.scaffoldeth.io">Documentation</a> |
   <a href="https://scaffoldeth.io">Website</a>
 </h4>
+
+📜 Scaffold-Scroll is a fork of Scaffold-ETH2 with minimal differences with native support for testnets, aim to help developers get use Scaffold easier on Scroll network.
 
 🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.
 
@@ -27,13 +35,13 @@ Before you begin, you need to install the following tools:
 
 ## Quickstart
 
-To get started with Scaffold-ETH 2, follow the steps below:
+To get started with Scaffold-Scroll, follow the steps below:
 
 1. Clone this repo & install dependencies
 
 ```
-git clone https://github.com/scaffold-eth/scaffold-eth-2.git
-cd scaffold-eth-2
+git clone https://github.com/scroll-tech/scaffold-scroll.git
+cd scaffold-scroll
 yarn install
 ```
 
@@ -61,6 +69,30 @@ yarn start
 
 Visit your app on: `http://localhost:3000`. You can interact with your smart contract using the `Debug Contracts` page. You can tweak the app config in `packages/nextjs/scaffold.config.ts`.
 
+## Deploy Contracts on Scroll Sepolia or L1SLOAD
+
+To deploy contracts to a remote testnet (e.g. Scroll Sepolia), follow the steps below:
+
+1. Get Scroll Sepolia ETH from the [Scroll Sepolia Faucet](https://docs.scroll.io/en/user-guide/faucet/) or [Scroll Sepolia thirdweb Faucet](https://thirdweb.com/scroll-sepolia-testnet).
+   Get L1SLOAD testnet token, follow this guide [L1SLOAD GUIDE](https://scrollzkp.notion.site/L1SLOAD-Guide-2be3c335005b4bd28da38c62cf3e6a9b).
+
+2. Inside the `packages/hardhat` directory, copy `.env.example` to `.env`.
+
+   ```bash
+   cd packages/hardhat && cp .env.example .env
+   ```
+
+3. Edit your `.env` to specify the environment variables. Only specifying the `DEPLOYER_PRIVATE_KEY` is necessary here. The contract will be deployed from the address associated with this private key, so make sure it has enough Sepolia ETH.
+
+4. Use command
+  ```
+  yarn deploy --network scrollSeplia
+  ```
+  or
+  ```
+  yarn deploy --network l1SLOAD
+  ```
+
 **What's next**:
 
 - Edit your smart contract `YourContract.sol` in `packages/hardhat/contracts`
@@ -68,14 +100,18 @@ Visit your app on: `http://localhost:3000`. You can interact with your smart con
 - Edit your deployment scripts in `packages/hardhat/deploy`
 - Edit your smart contract test in: `packages/hardhat/test`. To run test use `yarn hardhat:test`
 
+## Adding Foundry
+
+To add Foundry, follow this simple [tutorial](https://hardhat.org/hardhat-runner/docs/advanced/hardhat-and-foundry) by Hardhat.
+
 ## Documentation
 
-Visit our [docs](https://docs.scaffoldeth.io) to learn how to start building with Scaffold-ETH 2.
+Visit [docs](https://docs.scaffoldeth.io) to learn how to start building with Scaffold-ETH 2 which forked by Scaffold-Scroll.
 
-To know more about its features, check out our [website](https://scaffoldeth.io).
+To know more about its features, check out [website](https://scaffoldeth.io).
 
-## Contributing to Scaffold-ETH 2
+## Contributing to Scaffold-Scroll
 
-We welcome contributions to Scaffold-ETH 2!
+We welcome contributions to Scaffold-Scroll!
 
-Please see [CONTRIBUTING.MD](https://github.com/scaffold-eth/scaffold-eth-2/blob/main/CONTRIBUTING.md) for more information and guidelines for contributing to Scaffold-ETH 2.
+Please see [CONTRIBUTING.MD](https://github.com/scroll-tech/scaffold-scroll/blob/main/CONTRIBUTING.md) for more information and guidelines for contributing to Scaffold-Scroll.
