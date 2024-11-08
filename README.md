@@ -83,7 +83,7 @@ cd packages/hardhat && cp .env.example .env
 
 3. Edit your `.env` to specify the environment variables. Only specifying the `DEPLOYER_PRIVATE_KEY` is necessary here. The contract will be deployed from the address associated with this private key, so make sure it has enough Scroll Sepolia ETH or Scroll Devnet ETH depending on which network you are deploying on.
 
-4. Use command to deploy all of your contracts:
+4. Use these commands to deploy all of your contracts:
   
 ```
 # for scroll sepolia
