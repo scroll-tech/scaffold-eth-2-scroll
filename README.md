@@ -11,7 +11,7 @@
   <a href="https://scaffoldeth.io">Website</a>
 </h4>
 
-📜 Scaffold-Scroll is a fork of Scaffold-ETH2 with minimal differences with native support for testnets, aim to help developers get use Scaffold easier on Scroll network.
+📜 Scaffold-Scroll is a fork of Scaffold-ETH2 with minimal differences with native support for Scroll testnets, and aims to help developers use Scaffold-Eth more easily on the Scroll network.
 
 🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.
 
