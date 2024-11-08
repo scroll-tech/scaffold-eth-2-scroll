@@ -105,7 +105,7 @@ To add Foundry, follow this simple [tutorial](https://hardhat.org/hardhat-runner
 
 ## Documentation
 
-Visit [docs](https://docs.scaffoldeth.io) to learn how to start building with Scaffold-ETH 2 which forked by Scaffold-Scroll.
+Visit the Scaffold-Eth [docs](https://docs.scaffoldeth.io) to learn how to start building with by Scaffold-Scroll, a fork of Scaffold-Eth-2.
 
 To know more about its features, check out [website](https://scaffoldeth.io).
 
