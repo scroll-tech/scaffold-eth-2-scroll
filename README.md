@@ -73,7 +73,7 @@ Visit your app on: `http://localhost:3000`. You can interact with your smart con
 
 To deploy contracts to a remote testnet (e.g. Scroll Sepolia), follow the steps below:
 
-1. Get Scroll Sepolia ETH from the [Scroll Sepolia Faucet](https://docs.scroll.io/en/user-guide/faucet/) or [Scroll Sepolia thirdweb Faucet](https://thirdweb.com/scroll-sepolia-testnet). Get L1SLOAD testnet token, follow this guide [L1SLOAD GUIDE](https://scrollzkp.notion.site/L1SLOAD-Guide-2be3c335005b4bd28da38c62cf3e6a9b).
+1. Get Scroll Sepolia ETH from any of the [Scroll Sepolia faucets](https://docs.scroll.io/en/user-guide/faucet/) listed in our docs. To build with L1SLOAD, get Scroll Devnet token by following [the L1SLOAD guide](https://scrollzkp.notion.site/L1SLOAD-Guide-2be3c335005b4bd28da38c62cf3e6a9b).
 
 2. Inside the `packages/hardhat` directory, copy `.env.example` to `.env`.
 
