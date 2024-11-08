@@ -106,7 +106,7 @@ const config: HardhatUserConfig = {
       url: "https://sepolia-rpc.scroll.io",
       accounts: [deployerPrivateKey],
     },
-    l1SLOAD: {
+    L1SLOAD: {
       url: "https://l1sload-rpc.scroll.io",
       accounts: [deployerPrivateKey],
     },
